@@ -1,6 +1,6 @@
-package br.com.sergio.poo.HerançaInterfacePolimofismo.dominio;
+package br.com.sergio.poo.HerançaInterfacePolimofismo.ex6.dominio;
 
-public class Funcionario {
+public abstract class Funcionario  {
     protected String nome;
     protected double salario;
 
@@ -22,5 +22,7 @@ public class Funcionario {
         salario += 500;
         System.out.printf("\nSalário com dissídio de %s é %.2f ", nome, salario);
     }
+
+    public abstract void calculaPRL();
 
 }
